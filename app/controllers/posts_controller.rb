@@ -4,11 +4,11 @@ class PostsController < ApplicationController
     # render :template => "posts/index"
 
     # alternative responses to requests other than HTML
-    # respond_to do |format|
-    #   format.html # implicitly renders template posts/index.html.erb
-    #   format.json do
-    #     render :json => @posts
-    #   end
+    respond_to do |format|
+      format.html # implicitly renders template posts/index.html.erb
+      # format.json do
+      #   render :json => @posts
+      # end
     # end
   end
 
